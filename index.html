@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
     <style>
         .video-docker video {
             top: 50%;
@@ -124,6 +127,149 @@ width:80vw;
 .contact-right{
 display: none;
 }
+}
+
+
+/*Why Choose Us CSS Starts Here*/
+
+.card-wrapper {
+  max-width: 1100px;
+  margin: 0 60px 35px;
+  padding: 20px 10px;
+  overflow: hidden;
+}
+
+.card-list .card-item {
+  list-style: none;
+}
+
+.card-list .card-item .card-link {
+  display: block;
+  background: #fff;
+  padding: 18px;
+  user-select: none;
+  border-radius: 12px;
+  text-decoration: none;
+  border: 2px solid transparent;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+  transition: 0.2s ease;
+}
+
+.card-list .card-item .card-link:active {
+  cursor: grabbing;
+}
+
+.card-list .card-item .card-link:hover {
+  border-color: #5372F0;
+}
+
+.card-list .card-link .card-image {
+  width: 100%;
+  border-radius: 10px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.card-list .card-link .badge {
+  color: #5372F0;
+  width: fit-content;
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  border-radius: 50px;
+  font-weight: 500;
+  background: #DDE4FF;
+  margin: 16px 0 18px;
+}
+
+.card-list .card-link .badge-pink {
+  color: #B22485;
+  background: #F7DFF5;
+}
+
+.card-list .card-link .badge-orange {
+  color: #B25A2B;
+  background: #FFE3D2;
+}
+
+.card-list .card-link .badge-green {
+  color: #205C20;
+  background: #D6F8D6;
+}
+
+.card-list .card-link .badge-brown {
+  color: #856404;
+  background: #fff3cd;
+}
+
+.card-list .card-link .card-title {
+  color: #000;
+  font-size: 1.19rem;
+  font-weight: 600;
+}
+
+.card-list .card-link .card-button {
+  height: 35px;
+  width: 35px;
+  color: #5372F0;
+  margin: 30px 0 5px;
+  background: none;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid #5372F0;
+  transform: rotate(-45deg);
+  transition: 0.4s ease;
+}
+
+.card-list .card-link:hover .card-button {
+  color: #fff;
+  background: #5372F0;
+}
+
+.card-wrapper .swiper-pagination-bullet {
+  height: 13px;
+  width: 13px;
+  opacity: 0.5;
+  background: #5372F0;
+}
+
+.card-wrapper .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+.card-wrapper .swiper-slide-button {
+  color: #5372F0;
+  margin-top: -35px;
+}
+
+/* Responsive media query code for small screens */
+@media (max-width: 768px) {
+  .card-wrapper {
+    margin: 0 10px 25px;
+  }
+
+  .card-wrapper .swiper-slide-button {
+    display: none;
+  }
+}
+
+/*Why Choose Us CSS Ends Here*/
+
+
+.footer {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a2e;
+    text-align: center;
+    padding: 10px 0;
+    padding-left: 15px;
+    font-size: 14px;
+    color: #fff;
+    border-top: 1px solid #ddd;
+}
+
+.footer .designer {
+    font-weight: bold;
+    color: #fff;
+    padding: 15px;
 }
     </style>
 </head>
@@ -321,6 +467,150 @@ display: none;
 
 </section>
 
+<!--Why Choose Us Starts Here-->
+<section >
+<div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-20 lg:px-8">
+    <div class="max-w-2xl lg:max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl font-extrabold text-gray-900">Why Choose Us</h2>
+                </div>
+
+<div class="container swiper">
+    <div class="card-wrapper">
+      <!-- Card slides container -->
+      <ul class="card-list swiper-wrapper">
+        <li class="card-item swiper-slide">
+          <a href="#" class="card-link">
+            <img src="images/Industry_Expertise.jpg" alt="Card Image" class="card-image">
+            <p class="badge badge-pink">Industry Expertise</p>
+            <h2 class="card-title">Knowledge in pharma raw materials and chemicals.</h2>
+            
+          </a>
+        </li>
+        <li class="card-item swiper-slide" >
+          <a href="#" class="card-link">
+            <img src="images/Quality.jpg" alt="Card Image" class="card-image">
+            <p class="badge badge-green">Uncompromising Quality Standards</p>
+            <h2 class="card-title">Products meet ISO, GMP, and international standards.</h2>
+            
+          </a>
+        </li>
+        <li class="card-item swiper-slide">
+          <a href="#" class="card-link">
+            <img src="images/Comprehensive_Product_Range.jpg" alt="Card Image" class="card-image">
+            <p class="badge badge-orange">Comprehensive Product Range</p>
+            <h2 class="card-title">Wide variety of products available to satisfy your requirements.</h2>
+            
+          </a>
+        </li>
+        <li class="card-item swiper-slide">
+          <a href="#" class="card-link">
+            <img src="images/Customized_Solutions.jpg" alt="Card Image" class="card-image">
+            <p class="badge badge-green">Customized Solutions</p>
+            <h2 class="card-title">Tailored offerings to meet your specific needs.
+            </h2>
+            
+          </a>
+        </li>
+        <li class="card-item swiper-slide">
+          <a href="#" class="card-link">
+            <img src="images/Global Network.jpg" alt="Card Image" class="card-image">
+            <p class="badge badge-brown">Global Network</p>
+            <h2 class="card-title">Reliable, on-time delivery worldwide.
+            </h2>
+            
+          </a>
+        </li>
+
+        <li class="card-item swiper-slide">
+          <a href="#" class="card-link">
+            <img src="images/Competitive_Pricing.jpg" alt="Card Image" class="card-image">
+            <p class="badge badge-pink">Competitive Pricing</p>
+            <h2 class="card-title">Quality products at cost-effective prices.
+
+            </h2>
+            
+          </a>
+        </li>
+        <li class="card-item swiper-slide">
+          <a href="#" class="card-link">
+            <img src="images/Sustainability.jpg" alt="Card Image" class="card-image">
+            <p class="badge badge-orange">Commitment to Sustainability</p>
+            <h2 class="card-title">Environmentally friendly sourcing and practices.
+
+            </h2>
+            
+          </a>
+        </li>
+        <li class="card-item swiper-slide">
+          <a href="#" class="card-link">
+            <img src="images/Trust.jpg" alt="Card Image" class="card-image">
+            <p class="badge badge-green">Trusted by Clients Worldwide</p>
+            <h2 class="card-title">Proven track record with global industry leaders.
+
+            </h2>
+            
+          </a>
+        </li>
+        <li class="card-item swiper-slide">
+          <a href="#" class="card-link">
+            <img src="images/client_support.jpg" alt="Card Image" class="card-image">
+            <p class="badge badge-brown">Exceptional Customer Support</p>
+            <h2 class="card-title">Dedicated team ready to assist anytime.
+            </h2>
+            
+          </a>
+        </li>
+      </ul>
+
+       <!-- Pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- Navigation Buttons -->
+      <div class="swiper-slide-button swiper-button-prev"></div>
+      <div class="swiper-slide-button swiper-button-next"></div>
+    </div>
+  </div>
+
+  <!-- Linking SwiperJS script -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Linking custom script -->
+  <script>
+    new Swiper('.card-wrapper', {
+    loop: true,
+    spaceBetween: 30,
+
+    // Pagination bullets
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        dynamicBullets: true
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    // Responsive breakpoints
+    breakpoints: {
+        0: {
+            slidesPerView: 1
+        },
+        768: {
+            slidesPerView: 2
+        },
+        1024: {
+            slidesPerView: 3
+        }
+    }
+});
+  </script>
+
+</div>
+</section>
+<!--Why Choose Us Ends Here-->
 
 
     <section id="contact" class="bg-gray-100">
@@ -380,6 +670,13 @@ display: none;
     </section>
 
 
+    <footer class="footer">
+      <p>
+          Copyright © 2024 CCI. All Rights Reserved. 
+          <span class="designer"><a href="http://www.linkedin.com/in/devanshu-jadav-900b61238">Designed by: Devanshu Jadav</a></span>
+      </p>
+  </footer>
+
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const button = document.getElementById('navbar-toggle');
@@ -390,6 +687,7 @@ display: none;
             });
         });
     </script>
+
 
 </body>
 
