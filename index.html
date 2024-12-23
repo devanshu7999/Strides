@@ -1,6 +1,5 @@
 <!doctype html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,9 +8,658 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"  crossorigin="anonymous">
+
     <style>
+
+/*Misson Vision Core Values Starts Here */
+.highlight-section {
+    background-color: #f0f4f8;
+    padding: 20px;
+    border-left: 5px solid #2c3e50;
+}
+
+.mission-highlight {
+    background-color: #03a9f4;
+    display: inline-block;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 4px;
+}
+/*Misson Vision Core Values Ends Here */
+
+
+/*Read More Button CSS Starts Here*/
+.read-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: none;
+  overflow: hidden;
+  background: #03a9f4;
+  color: #fff;
+}
+
+.read-button-text {
+  transform: translateX(15px);
+  font-size: 1.2em;
+  font-weight: 700;
+  transition-duration: 0.3s;
+}
+
+.iconer {
+  transform: translateY(35px);
+  transition-duration: 0.3s;
+}
+
+.read-button:hover .read-button-text {
+  transform: translateX(0px);
+}
+
+.read-button:hover .iconer {
+  transform: translateY(0px);
+}
+/*Read More Button CSS Ends Here*/
+
+
+/*Partner With Us CSS Starts Here*/
+.partner-section {
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%; /* Updated to take the full width */
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    flex-direction: row; /* Default layout for larger screens */
+}
+
+.partner-content {
+    padding: 20px;
+    flex: 1;
+}
+
+.partner-content h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.partner-content p {
+    margin: 20px 0;
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.partner-content .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6c63ff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.partner-content .btn:hover {
+    background-color: #5848d6;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .partner-section {
+        flex-direction: column; /* Stack content vertically */
+    }
+
+    .image-container img {
+        max-width: 80%; /* Shrink image width */
+        margin-top: 10px;
+    }
+}
+/*Partner With Us CSS Ends Here*/
+
+
+/*Contact US Starts Here*/
+.contact_us_6 * {
+  font-family: Nunito, sans-serif;
+}
+
+.contact_us_6 .text-blk {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  line-height: 25px;
+}
+
+.contact_us_6 .responsive-cell-block {
+  min-height: 75px;
+}
+
+.contact_us_6 input:focus,
+.contact_us_6 textarea:focus {
+  outline-color: initial;
+  outline-style: none;
+  outline-width: initial;
+}
+
+.contact_us_6 .container-block {
+  min-height: 75px;
+  width: 100%;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  display: block;
+}
+
+.contact_us_6 .responsive-container-block {
+  min-height: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 50px;
+  margin-left: auto;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+.contact_us_6 .responsive-container-block.big-container {
+  padding-top: 10px;
+  padding-right: 30px;
+  width: 35%;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  background-color: #03a9f4;
+  position: absolute;
+  height: 950px;
+  right: 0px;
+}
+
+.contact_us_6 .responsive-container-block.container {
+  position: relative;
+  min-height: 75px;
+  flex-direction: row;
+  z-index: 2;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0px;
+  padding-right: 30px;
+  padding-bottom: 0px;
+  padding-left: 30px;
+  max-width: 1320px;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+}
+
+.contact_us_6 .container-block.form-wrapper {
+  background-color: white;
+  max-width: 450px;
+  text-align: center;
+  padding-top: 50px;
+  padding-right: 40px;
+  padding-bottom: 50px;
+  padding-left: 40px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 20px 7px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  margin-top: 90px;
+  margin-right: 0px;
+  margin-bottom: 60px;
+  margin-left: 0px;
+}
+
+.contact_us_6 .text-blk.contactus-head {
+  font-size: 36px;
+  line-height: 52px;
+  font-weight: 900;
+}
+
+.contact_us_6 .text-blk.contactus-subhead {
+  color: #9c9c9c;
+  width: 300px;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 50px;
+  margin-left: auto;
+  display: none;
+}
+
+.contact_us_6 .responsive-cell-block.wk-desk-6.wk-ipadp-6.wk-tab-12.wk-mobile-12 {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 26px;
+  margin-left: 0px;
+  min-height: 50px;
+}
+
+.contact_us_6 .input {
+  width: 100%;
+  height: 50px;
+  padding-top: 1px;
+  padding-right: 15px;
+  padding-bottom: 1px;
+  padding-left: 15px;
+  border-top-width: 2px;
+  border-right-width: 2px;
+  border-bottom-width: 2px;
+  border-left-width: 2px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-top-color: #eeeeee;
+  border-right-color: #eeeeee;
+  border-bottom-color: #eeeeee;
+  border-left-color: #eeeeee;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  font-size: 16px;
+  color: black;
+}
+
+.contact_us_6 .textinput {
+  width: 98%;
+  min-height: 150px;
+  padding-top: 20px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+  padding-left: 15px;
+  border-top-width: 2px;
+  border-right-width: 2px;
+  border-bottom-width: 2px;
+  border-left-width: 2px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-top-color: #eeeeee;
+  border-right-color: #eeeeee;
+  border-bottom-color: #eeeeee;
+  border-left-color: #eeeeee;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  font-size: 16px;
+}
+
+.contact_us_6 .submit-btn {
+  width: 98%;
+  background-color: #03a9f4;
+  height: 60px;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  border-top-style: outset;
+  border-right-style: outset;
+  border-bottom-style: outset;
+  border-left-style: outset;
+  border-top-color: #767676;
+  border-right-color: #767676;
+  border-bottom-color: #767676;
+  border-left-color: #767676;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+
+.contact_us_6 .form-box {
+  z-index: 2;
+  margin-top: 0px;
+  margin-right: 48px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+
+.contact_us_6 .text-blk.input-title {
+  text-align: left;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 10px;
+  font-size: 14px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  color: #9c9c9c;
+}
+
+.contact_us_6 ::placeholder {
+  color: #dadada;
+}
+
+.contact_us_6 .mob-text {
+  display: block;
+  text-align: left;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 25px;
+  margin-left: 0px;
+}
+
+.contact_us_6 .responsive-cell-block.wk-tab-12.wk-mobile-12.wk-desk-12.wk-ipadp-12 {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 20px;
+  margin-left: 0px;
+}
+
+.contact_us_6 .text-blk.contactus-subhead.color {
+  color: white;
+}
+
+
+.contact_us_6 .text-blk.map-contactus-head {
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 32px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  color: #03a9f4;
+}
+
+.contact_us_6 .text-blk.map-contactus-subhead {
+  max-width: 300px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 20px;
+  margin-left: 0px;
+}
+
+.contact_us_6 .social-media-links.mob {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 30px;
+  margin-left: 0px;
+  width: 230px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.contact_us_6 .link-img {
+  width: 30px;
+  height: 30px;
+  margin-top: 0px;
+  margin-right: 25px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+
+.contact_us_6 .link-img.image-block {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+
+.contact_us_6 .social-icon-link {
+  margin: 0 25px 0 0;
+  padding: 0 0 0 0;
+}
+
+@media (max-width: 1024px) {
+  .contact_us_6 .responsive-container-block.container {
+    justify-content: center;
+  }
+
+  
+
+  .contact_us_6 .responsive-container-block.container {
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+  }
+
+  .contact_us_6 .map-part {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact_us_6 .container-block.form-wrapper {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+  }
+
+  .contact_us_6 .mob-text {
+    display: block;
+  }
+
+  .contact_us_6 .form-box {
+    margin-top: 200px;
+    margin-right: 60px;
+    margin-bottom: 40px;
+    margin-left: 0px;
+  }
+
+  .contact_us_6 .link-img {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .contact_us_6 .social-media-links.mob {
+    justify-content: space-evenly;
+  }
+
+  .contact_us_6 .responsive-cell-block.wk-desk-7.wk-ipadp-12.wk-tab-12.wk-mobile-12 {
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .contact_us_6 .text-blk.contactus-subhead {
+    display: block;
+  }
+
+  .contact_us_6 .mob-text {
+    text-align: center;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+  }
+
+  .contact_us_6 .responsive-container-block.container {
+    flex-wrap: wrap;
+  }
+
+  .contact_us_6 .form-box {
+    
+    margin-top: 200px;
+    margin-right: 0px;
+    margin-bottom: 40px;
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact_us_6 .submit-btn {
+    width: 100%;
+  }
+
+  .contact_us_6 .input {
+    width: 100%;
+  }
+
+  .contact_us_6 .textinput {
+    width: 100%;
+  }
+
+  .contact_us_6 .container-block.form-wrapper {
+    margin-top: 80px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+  }
+
+  .contact_us_6 .text-blk.input-title {
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+  }
+
+  .contact_us_6 .form-box {
+    padding-top: 0px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+  }
+
+  .contact_us_6 .container-block.form-wrapper {
+    padding-top: 50px;
+    padding-right: 15px;
+    padding-bottom: 50px;
+    padding-left: 15px;
+  }
+
+  .contact_us_6 .mob-text {
+    display: block;
+  }
+
+  .contact_us_6 .responsive-container-block.container {
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+  }
+
+  .contact_us_6 .form-box {
+    margin-top: 200px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+  }
+
+  .contact_us_6 .container-block.form-wrapper {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+  }
+
+  .contact_us_6 .form-box {
+    margin-top: 220px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+  }
+
+  .contact_us_6 .form-box {
+    margin-top: 220px;
+    margin-right: 0px;
+    margin-bottom: 50px;
+    margin-left: 0px;
+  }
+
+  .contact_us_6 .text-blk.contactus-head {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact_us_6 .container-block.form-wrapper {
+    padding-top: 50px;
+    padding-right: 15px;
+    padding-bottom: 50px;
+    padding-left: 15px;
+  }
+
+  .contact_us_6 .container-block.form-wrapper {
+    margin-top: 60px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+  }
+
+  .contact_us_6 .responsive-cell-block.wk-ipadp-6.wk-tab-12.wk-mobile-12.wk-desk-6 {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 15px;
+    margin-left: 0px;
+  }
+
+  .contact_us_6 .responsive-container-block {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 35px;
+    margin-left: 0px;
+  }
+
+  .contact_us_6 .text-blk.input-title {
+    font-size: 12px;
+  }
+
+  .contact_us_6 .text-blk.contactus-head {
+    font-size: 26px;
+    line-height: 35px;
+  }
+
+  .contact_us_6 .input {
+    height: 45px;
+  }
+}
+/*Contact US Ends Here*/
+
+
         .video-docker video {
             top: 50%;
             left: 50%;
@@ -37,97 +685,6 @@
             scroll-behavior: smooth;
         }
 
-
-
-.contact-container
-{
-display:flex;
-align-items: center;
-justify-content:space-evenly;
-
-box-sizing: border-box;
-font-family:'Outfit';
-}
-
-.contact-left
-{
-display:flex;
-flex-direction: column;
-align-items: start;
-gap: 20px;
-}
-
-.contact-left-title h2
-{
-font-weight: 600;
-color: #a363aa;
-font-size: 40px;
-margin-bottom:5px;
-}
-
-.contact-left-title hr
-{
-border: none;
-width: 120px;
-height: 5px;
-background-color: #a363aa;
-border-radius: 10px;
-margin-bottom: 20px;
-}
-
-.contact-inputs
-{
-width: 400px;
-height: 50px;
-border: none;
-outline: none;
-padding-left: 25px;
-font-weight: 500;
-color:#666
-/*border-radius: 50px;*/
-}
-
-.contact-left textarea
-{
-height:140px;
-padding-top:15px;
-border-radius: 20px;
-}
-
-.contact-inputs:focus
-{
-border:2px solid #ff994f;
-}
-
-.contact-inputs::placeholder
-{
-color: #a9a9a9;
-}
-
-.contact-left button
-{
-display: flex;
-align-items: center;
-padding: 15px 30px;
-font-size:16px;
-color: #fff;
-gap: 10px;
-border: none;
-border-radius:50px;
-background: linear-gradient(270deg, #ff994f, #fa6d86);
-cursor: pointer;
-}
-
-
-@media (max-width:800px)
-{
-.contact-inputs{
-width:80vw;
-}
-.contact-right{
-display: none;
-}
-}
 
 
 /*Why Choose Us CSS Starts Here*/
@@ -254,13 +811,14 @@ display: none;
 
 /*Why Choose Us CSS Ends Here*/
 
-
+/*Footer CSS Starts Here*/
 .footer {
     font-family: Arial, sans-serif;
     background-color: #1a1a2e;
     text-align: center;
     padding: 10px 0;
-    padding-left: 15px;
+    padding-left: 5vh;
+    padding-right: 5vh;
     font-size: 14px;
     color: #fff;
     border-top: 1px solid #ddd;
@@ -271,10 +829,16 @@ display: none;
     color: #fff;
     padding: 15px;
 }
+/*Footer CSS Ends Here*/
     </style>
+
+    <title>Strides.inc</title>
 </head>
 
+
 <body id="home">
+
+<!--Header Starts Here-->
     <nav
         class="bg-white fixed w-full z-20 top-0 left-0 border-b border-gray-200  shadow-md">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -318,9 +882,7 @@ display: none;
             </div>
         </div>
     </nav>
-
-
-
+<!--Header Ends Here-->
 
 
 
@@ -338,9 +900,6 @@ display: none;
 
 
 
-
-
-
     <section id="about" class="text-gray-600 body-font bg-white ">
         <div class="container mx-auto flex md:px-24 md:py-10 md:flex-row flex-col items-center">
             <div
@@ -354,58 +913,68 @@ display: none;
                     Energy, and Food. With a commitment to innovation and sustainability, we strive to enhance the
                     quality of life worldwide. <br> <br>
 
-                    At Strides.inc, we deliver exceptional solutions across key industries to 
+                    We deliver exceptional solutions across key industries to 
                 drive progress and improve lives globally. Explore our impact in pharmaceuticals, chemicals, energy, and
-                the food sector
-                </p>
-                <p class="mb-8 md:pl-0  pl-2 pr-2 leading-relaxed "> <b>Mission:</b>
-                     To provide quality-driven solutions that enrich lives and create a sustainable future.
-                </p>
-                <p class="mb-8 md:pl-0  pl-2 pr-2 leading-relaxed "> <b>Vision:</b> 
-                    To lead with integrity and innovation, adding value across industries for global betterment.
-                </p>
-                <p class="mb-8 md:pl-0  pl-2 pr-2 leading-relaxed "> <b>Core Values:</b> 
-                    Quality, Innovation, Integrity, and Sustainability.
+                the food sector.
                 </p>
 
+                <!--Misson, Vision, Core Values-->
+                <div class="highlight-section">
+                  <h2 class="mission-highlight">Mission</h2>
+                  <p>To provide quality-driven solutions that enrich lives and create a sustainable future.</p>
+              </div> <br>
 
+              <div class="highlight-section">
+                  <h2 class="mission-highlight">Vision</h2>
+                  <p>To lead with integrity and innovation, adding value across industries for global betterment.</p>
+              </div> <br>
+
+              <div class="highlight-section">
+                  <h2 class="mission-highlight">Core Values</h2>
+                  <p>Quality, Innovation, Integrity, and Sustainability.</p>
+              </div> <br>
+                
             </div>
             <div class="lg:max-w-lg lg:w-full mb-5 md:mb-0 md:w-1/2 w-3/6">
                 <img class="object-cover object-center rounded" alt="hero"
-                    src="https://www.svgrepo.com/show/209399/molecules-molecular.svg">
+                    src="images/3443535.png">
             </div>
         </div>
     </section>
+
 
 
 <section id="products">
     <div class="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16">
         <h1
             class="text-2xl font-extrabold leading-9 tracking-tight mb-3 text-gray-900  sm:text-4xl sm:leading-10 md:text-5xl md:leading-normal">
-            Our Key Focus Areas
+            Industries We Serve
         </h1>
         <div class="grid grid-cols-1 md:grid-cols-4 sm:grid-cols-2 gap-5">
 
-            <div class="relative w-full flex items-end justify-start text-left bg-cover bg-center"
-                style="height: 450px; background-image:url('Pharmaceuticals.jpg');">
+            <div class="hover:opacity-75 transition-opacity duration-300     relative w-full flex items-end justify-start text-left bg-cover bg-center"
+                style="height: 450px; background-image:url('Pharmaceuticals.jpg');">     
                 <div class="absolute top-0 mt-20 right-0 bottom-0 left-0 bg-gradient-to-b from-transparent to-gray-900">
                 </div>
+
                 <div class="absolute top-0 right-0 left-0 mx-5 mt-2 flex justify-between items-center">
                     <div class="text-white font-regular flex flex-col justify-start">
                         <span class="text-3xl leading-0 font-semibold">Pharmaceuticals</span>
                     </div>
                 </div>
                 <main class="p-5 z-10">
-                    <a href="#"
-                        class="text-md tracking-tight font-medium leading-7 font-regular text-white hover:underline">
-                        Strides.inc is committed to improving healthcare with high-quality APIs, innovative
-                        formulations, and precise manufacturing practices, meeting global health standards.
-                    </a>
+                    <!--Read More Button-->
+
+<a class="read-button" href="Pharmaceutical.html">
+  <p class="read-button-text"> More</p> 
+<p class="iconer">
+<svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0h24v24H0z" fill="none"></path><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path>		</svg>
+</p>  
+</a>
                 </main>
-
             </div>
-
-            <div class="relative w-full flex items-end justify-start text-left bg-cover bg-center"
+            <div class="hover:opacity-75 transition-opacity duration-300  relative w-full flex items-end justify-start text-left bg-cover bg-center"
                 style="height: 450px; background-image:url('Chemicals.jpg');">
                 <div class="absolute top-0 mt-20 right-0 bottom-0 left-0 bg-gradient-to-b from-transparent to-gray-900">
                 </div>
@@ -415,16 +984,18 @@ display: none;
                     </div>
                 </div>
                 <main class="p-5 z-10">
-                    <a href="#"
-                        class="text-md tracking-tight font-medium leading-7 font-regular text-white hover:underline">Delivering
-                        specialty and industrial chemicals tailored to diverse industries, we prioritize innovation,
-                        safety, and sustainability.
-                    </a>
+                    <!--Read More Button-->
+
+<a class="read-button" href="Chemicals.html">
+  <p class="read-button-text"> More</p> 
+<p class="iconer">
+<svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0h24v24H0z" fill="none"></path><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path>		</svg>
+</p>  
+</a>
                 </main>
-
             </div>
-
-            <div class="relative w-full flex items-end justify-start text-left bg-cover bg-center"
+            <div class="hover:opacity-75 transition-opacity duration-300  relative w-full flex items-end justify-start text-left bg-cover bg-center"
                 style="height: 450px; background-image:url('Energy.jpg');">
                 <div class="absolute top-0 mt-20 right-0 bottom-0 left-0 bg-gradient-to-b from-transparent to-gray-900">
                 </div>
@@ -434,16 +1005,18 @@ display: none;
                     </div>
                 </div>
                 <main class="p-5 z-10">
-                    <a href="#"
-                        class="text-md tracking-tight font-medium leading-7 font-regular text-white hover:underline">Focused
-                        on renewable and sustainable energy solutions, including solar energy, biofuels, and
-                        eco-friendly practices that empower a cleaner tomorrow.
-                    </a>
+                    <!--Read More Button-->
+
+<a class="read-button" href="Energy.html">
+  <p class="read-button-text"> More</p> 
+<p class="iconer">
+<svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0h24v24H0z" fill="none"></path><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path>		</svg>
+</p>  
+</a>
                 </main>
-
             </div>
-
-            <div class="relative w-full flex items-end justify-start text-left bg-cover bg-center"
+            <div class="hover:opacity-75 transition-opacity duration-300  relative w-full flex items-end justify-start text-left bg-cover bg-center"
                 style="height: 450px; background-image:url('Food_Sector.jpg');">
                 <div class="absolute top-0 mt-20 right-0 bottom-0 left-0 bg-gradient-to-b from-transparent to-gray-900">
                 </div>
@@ -453,19 +1026,21 @@ display: none;
                     </div>
                 </div>
                 <main class="p-5 z-10">
-                    <a href="#"
-                        class="text-md tracking-tight font-medium leading-7 font-regular text-white hover:underline">Sourcing
-                        the finest spices and food products to enhance culinary experiences worldwide. Our offerings are
-                        ethically sourced and of unmatched quality.
-                    </a>
+                    <!--Read More Button-->
+
+<a class="read-button" href="Food.html">
+  <p class="read-button-text"> More</p> 
+<p class="iconer">
+<svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0h24v24H0z" fill="none"></path><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path>		</svg>
+</p>  
+</a>
                 </main>
-
             </div>
-
         </div>
     </div>
-
 </section>
+
 
 <!--Why Choose Us Starts Here-->
 <section >
@@ -545,10 +1120,7 @@ display: none;
           <a href="#" class="card-link">
             <img src="images/Trust.jpg" alt="Card Image" class="card-image">
             <p class="badge badge-green">Trusted by Clients Worldwide</p>
-            <h2 class="card-title">Proven track record with global industry leaders.
-
-            </h2>
-            
+            <h2 class="card-title">Proven track record with global industry leaders.</h2>         
           </a>
         </li>
         <li class="card-item swiper-slide">
@@ -556,8 +1128,7 @@ display: none;
             <img src="images/client_support.jpg" alt="Card Image" class="card-image">
             <p class="badge badge-brown">Exceptional Customer Support</p>
             <h2 class="card-title">Dedicated team ready to assist anytime.
-            </h2>
-            
+            </h2>            
           </a>
         </li>
       </ul>
@@ -613,69 +1184,138 @@ display: none;
 <!--Why Choose Us Ends Here-->
 
 
-    <section id="contact" class="bg-gray-100">
+<!-- Partner With Us HTML Starts Here -->
+<section>
+  <div class="flex max-w-3xl mx-auto py-16 px-4 sm:px-6 lg:py-20 lg:px-8">
+  
+<div class="partner-section ">
+  <div class="partner-content">
+      <h1><b>Partner With Us</b></h1>
+      <p>We believe in the power of collaboration and mutual growth. Let's build a future fueled by innovation, sustainability, and excellence.</p>
+      <a href="#contact" class="btn">Become a Partner</a>
+  </div>
+  <div class="image-container">
+      <img src="images/p2.png" alt="Partner with Us Illustration">
+  </div>
+</div>
 
-        <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-20 lg:px-8">
-            <div class="max-w-2xl lg:max-w-4xl mx-auto text-center">
-                <h2 class="text-3xl font-extrabold text-gray-900">Contact Us</h2>
-                        </div>
-            <div class="mt-16 lg:mt-20">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div class="rounded-lg overflow-hidden">
-                        
-                        <!-- Inquiry Box Starts here-->
-                        <div class="contact-container">
-                            <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
-                                 <div class="contact-left-title">
-                                        <h2> Get in Touch </h2>
-                                  <hr>
-                                 </div>
-                        <input type="hidden" name="access_key" value="fda4deb8-1b18-4412-ae02-d5bc1e5eaffe">
-                        <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
-                        <input type="tel" name="phone" placeholder="Your Mobile No." class="contact-inputs" required>
-                        <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
-                        <textarea name="message" placeholder="Enter your requirements" class="contact-inputs" required></textarea>
-                        
-                        <button type="submit">Send Inquiry</button>
-                            </form>
-                            <div class="contact-right">
-                            
-                            </div>
-                        </div>
-                        <!-- Inquiry Box Ens here-->
+</div>
 
+</section>
+<!-- Partner With Us HTML Ends Here-->
+
+
+
+<!--Contact Us Starts Here-->
+<section id="contact" class="bg-gray-100">
+
+  <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-20 lg:px-8">
+      <div class="max-w-2xl lg:max-w-4xl mx-auto text-center">
+          <h2 class=" text-3xl font-extrabold text-gray-900">Contact Us</h2> </div>
+                  
+          <div class="contact_us_6">
+              <div class="responsive-container-block container">
+                <form class="form-box" action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                  <div class="container-block form-wrapper">
+                    <div class="mob-text">
+
+                      <p class="text-blk contactus-head">
+                        Get in Touch
+                      </p>
+                      <p class="text-blk contactus-subhead">
+                        Fill the following details to directly mail us what your requirements are:
+                      </p>
                     </div>
-                    <div>
-                        <div class="max-w-full mx-auto rounded-lg overflow-hidden">
-                            <div class="px-6 py-4">
-                                <h3 class="text-lg font-medium text-gray-900">Our Address</h3>
-                                <p class="mt-1 text-gray-600">Strides.inc, Ahmedabad-Gujarat, India </p>
-                            </div>
-                            <div class="border-t border-gray-200 px-6 py-4">
-                                <h3 class="text-lg font-medium text-gray-900">Hours</h3>
-                                <p class="mt-1 text-gray-600">Monday to Friday, 9 AM – 6 PM IST.</p>
-                                <p class="mt-1 text-gray-600">Saturday: 10am - 4pm</p>
-                                <p class="mt-1 text-gray-600">Sunday: Closed</p>
-                            </div>
-                            <div class="border-t border-gray-200 px-6 py-4">
-                                <h3 class="text-lg font-medium text-gray-900">Contact</h3>
-                                <p class="mt-1 text-gray-600">Email: contact@strides.inc</p>
-                                <p class="mt-1 text-gray-600">Phone: +91 7990994921</p>
-                            </div>
-                        </div>
+
+                    <input type="hidden" name="access_key" value="fda4deb8-1b18-4412-ae02-d5bc1e5eaffe">
+
+                    <div class="responsive-container-block" id="i2cbk">
+                      <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i10mt-3">
+                        <p class="text-blk input-title">
+                         <b> NAME </b>
+                        </p>
+                        <input type="text" name="name" class="input" id="ijowk-3" placeholder="Please enter your name">
+                      </div>
+                      <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="ip1yp">
+                        <p class="text-blk input-title">
+                          <b>EMAIL</b>
+                        </p>
+                        <input type="email" name="email" class="input" id="ipmgh-3"  placeholder="Please enter your email">
+                      </div>
+                      <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="ih9wi">
+                        <p class="text-blk input-title">
+                      <b> PHONE NUMBER</b>
+                        </p>
+                        <input type="tel" name="phone" class="input" id="imgis-3"  placeholder="Please enter your phone number">
+                      </div>
+                      <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i634i-3">
+                        <p class="text-blk input-title">
+                      <b>REQUIREMENTS</b>
+                        </p>
+                        <textarea name="message" class="textinput" id="i5vyy-3" placeholder="Please enter your requirements"></textarea>
+                      </div>
                     </div>
+                    <button type="submit" class="submit-btn" id="w-c-s-bgc_p-1-dm-id-2">
+                      Send Inquiry
+                    </button>
+                  </div>
+                </form>
+
+
+
+                <div class="responsive-cell-block wk-desk-7 wk-ipadp-12 wk-tab-12 wk-mobile-12" id="i772w">
+                  <div class="map-part">
+                    <p class="text-blk map-contactus-head" id="w-c-s-fc_p-1-dm-id">
+                      Reach us at
+                    </p>
+                    <p class="text-blk map-contactus-subhead">
+                      Feel free to connect with us, we are always ready to help you out!
+                    </p>
+                    <div class="social-media-links mob">
+                      <a class="social-icon-link" href="https://www.linkedin.com/company/strides-inc/" id="ix94i-2-2">
+                        <img class="link-img image-block" src="images/linkedin-black.png">
+                      </a>
+                      <a class="social-icon-link" href="https://wa.me/+917990994921" id="itixd">
+                        <img class="link-img image-block" src="images/whatsapp-black.png">
+                      </a>
+                    </div>
+                    <div class="max-w-full mx-auto rounded-lg overflow-hidden">
+                      <div class="px-6 py-4">
+                          <h3 class="text-lg font-medium text-gray-900">Our Address</h3>
+                          <p class="mt-1 text-gray-600">Strides.inc, Ahmedabad-Gujarat, India </p>
+                      </div>
+                      <div class="border-t border-gray-200 px-6 py-4">
+                          <h3 class="text-lg font-medium text-gray-900">Hours</h3>
+                          <p class="mt-1 text-gray-600">Monday to Saturday, 9 AM – 6 PM IST.</p>
+                          <p class="mt-1 text-gray-600"></p>
+                          <p class="mt-1 text-gray-600">Sunday: Closed</p>
+                      </div>
+                      <div class="border-t border-gray-200 px-6 py-4">
+                          <h3 class="text-lg font-medium text-gray-900">Contact</h3>
+                          <p class="mt-1 text-gray-600">Email: contact@strides.inc | ankur.work03@gmail.com</p>
+                          <p class="mt-1 text-gray-600">Phone: +91 7990994921</p>
+                      </div>
+                  </div>
+                  
+                  </div>
                 </div>
+              </div>
             </div>
-        </div>
-    </section>
+</section>
+<!--Contact Us Ends Here-->
 
 
+
+
+    
+<!--Footer Starts Here-->
     <footer class="footer">
       <p>
           Copyright © 2024 CCI. All Rights Reserved. 
-          <span class="designer"><a href="http://www.linkedin.com/in/devanshu-jadav-900b61238">Designed by: Devanshu Jadav</a></span>
+          <span class="designer"><a href="http://www.linkedin.com/in/devanshu-jadav-900b61238">Developed by: Devanshu Jadav</a></span>
       </p>
   </footer>
+<!--Footer Ends Here-->
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
