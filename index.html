@@ -15,21 +15,72 @@
 
     <style>
 
-/*Misson Vision Core Values Starts Here */
-.highlight-section {
-    background-color: #f0f4f8;
-    padding: 20px;
-    /*border-left: 5px solid #2c3e50;*/
-}
 
-.mission-highlight {
-    background-color: #03a9f4;
-    display: inline-block;
-    padding: 5px 10px;
-    color: #fff;
-    border-radius: 4px;
-}
-/*Misson Vision Core Values Ends Here */
+/*The Misson Vision Core Values Starts Here */
+
+.mvv-container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            
+        }
+
+        .mvv-card {
+            background: #f8f9fa;           
+            padding: 20px;
+            margin-bottom: 1.5rem;
+            background-color: #f0f4f8;
+            border-left: 5px solid #2c3e50;
+            transition: transform 0.3s ease;
+        }
+
+        .mvv-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .mvv-label {
+            display: inline-block;
+            background: #00a8e8;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 1px;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .mvv-content {
+            color: #444;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .core-values-list {
+            color: #444;
+            font-size: 1rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        .core-values-list span {
+            color: #00a8e8;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .mvv-container {
+                padding: 0 0.5rem;
+            }
+
+            .mvv-card {
+                padding: 1.5rem;
+            }
+
+            .mvv-content {
+                font-size: 1rem;
+            }
+        }
+
+/*The Misson Vision Core Values Ends Here */
 
 
 /*Read More Button CSS Starts Here*/
@@ -918,27 +969,41 @@
                 the food sector.
                 </p>
 
-                <!--Misson, Vision, Core Values-->
-                <div class="highlight-section">
-                  <h2 class="mission-highlight">Mission</h2>
-                  <p>To provide quality-driven solutions that enrich lives and create a sustainable future.</p>
-              </div> <br>
+              
 
-              <div class="highlight-section">
-                  <h2 class="mission-highlight">Vision</h2>
-                  <p>To lead with integrity and innovation, adding value across industries for global betterment.</p>
-              </div> <br>
+            <!--The Misson, Vision, Core Values HTML Code Starts Here-->
 
-              <div class="highlight-section">
-                  <h2 class="mission-highlight">Core Values</h2>
-                  <p>Quality, Innovation, Integrity, and Sustainability.</p>
-              </div> <br>
-                
-            </div>
-            <div class="lg:max-w-lg lg:w-full mb-5 md:mb-0 md:w-1/2 w-3/6">
-                <img class="object-cover object-center rounded" alt="hero"
-                    src="images/3443535.png">
-            </div>
+    <div class="mvv-container">
+      <div class="mvv-card">
+          <div class="mvv-label">Mission</div>
+          <div class="mvv-content">
+              To provide quality-driven solutions that enrich lives and create a sustainable future.
+          </div>
+      </div>
+
+      <div class="mvv-card">
+          <div class="mvv-label">Vision</div>
+          <div class="mvv-content">
+              To lead with integrity and innovation, adding value across industries for global betterment.
+          </div>
+      </div>
+
+      <div class="mvv-card">
+          <div class="mvv-label">Core Values</div>
+          <div class="mvv-content core-values-list">
+              Quality, Innovation, Integrity, and Sustainability.
+          </div>
+      </div>
+  </div>
+
+<!--The Misson, Vision, Core Values HTML Code Ends Here-->
+
+</div>
+<div class="lg:max-w-lg lg:w-full mb-5 md:mb-0 md:w-1/2 w-3/6">
+    <img class="object-cover object-center rounded" alt="hero"
+        src="images/3443535.png">
+</div>
+
         </div>
     </section>
 
