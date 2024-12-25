@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Sector</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/api/placeholder/1200/400');
+            background-size: cover;
+            background-position: center;
+            background-image: url(images/Food-bg-image.jpg);
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 2rem;
+            color: white;
+        }
+
+        .breadcrumb {
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb a {
+            color: white;
+            text-decoration: none;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .content-section {
+            display: flex;
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .content-image {
+            flex: 1;
+        }
+
+        .content-image img {
+            width: 70%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .content-text {
+            flex: 1;
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+        
+        .content-text p {
+            margin-bottom: 0.8rem;
+            color: #000;
+        }
+
+        .section-title {
+            color: #b03a2e ;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .columns {
+            display: flex;
+            gap: 4rem;
+            margin-top: 3rem;
+        }
+
+        .column {
+            flex: 1;
+        }
+
+        .column h3 {
+            color: #b03a2e ;
+            font-size: 1.2rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .column ul {
+            list-style: none;
+            /*padding-left: 1.5rem;*/
+            margin-top: 0.5rem;
+        }
+
+        .column ul li {
+            position: relative;
+            margin-bottom: 0.5rem;
+            color: black;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            padding-left: 1rem;
+        }
+
+        .column ul li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background-color: #b03a2e ;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                height: 300px;
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .content-section {
+                flex-direction: column;
+            }
+
+            .columns {
+                flex-direction: column;
+                gap: 2rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+        }
+
+
+        /*Footer CSS Starts Here*/
+.footer {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a2e;
+    text-align: center;
+    padding: 10px 0;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    font-size: 14px;
+    color: #fff;
+    border-top: 1px solid #ddd;
+}
+
+.footer .designer {
+    font-weight: bold;
+    color: #fff;
+    padding: 15px;
+    text-decoration: none;
+}
+/*Footer CSS Ends Here*/
+    </style>
+</head>
+<body>
+
+<!--Header Starts Here-->
+<nav
+class="bg-white fixed w-full z-20 top-0 left-0 border-b border-gray-200  shadow-md">
+<div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <a href="index.html" class="flex items-center">
+        <img src="strides_logo.png" class="w-26 h-10" alt="Logo">
+        <span class="self-center text-2xl font-semibold whitespace-nowrap"></span>
+    </a>
+    <div class="flex md:order-2">
+        <button id="navbar-toggle" data-collapse-toggle="navbar-sticky" type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-sticky" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M1 1h15M1 7h15M1 13h15" />
+            </svg>
+        </button>
+    </div>
+    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+        <ul
+            class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white ">
+            <li>
+                <a href="index.html#home"
+                    class="scroll-to-section block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0"
+                    aria-current="page">Home</a>
+            </li>
+            <li>
+                <a href="index.html#about"
+                    class="scroll-to-section block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">About</a>
+            </li>
+            <li>
+                <a href="index.html#products"
+                    class="scroll-to-section block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">Products</a>
+            </li>
+            <li>
+                <a href="index.html#contact"
+                    class="scroll-to-section block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">Contact</a>
+            </li>
+        </ul>
+    </div>
+</div>
+</nav>
+<!--Header Ends Here-->
+
+
+
+
+    <header class="header">
+       <nav class="breadcrumb">
+            <a href="#">HOME</a> > <a href="#">PRODUCTS</a> > FOOD SECTOR 
+        </nav>
+        <h1 class="text-2xl font-extrabold leading-9 tracking-tight mb-3 text-white-900  sm:text-4xl sm:leading-10 md:text-5xl md:leading-normal">Food Sector</h1>
+    </header>
+
+    <main class="container">
+        <section class="content-section">
+            <div class="content-image">
+                <img src="images/food-about-img.jpg" alt="Image">
+            </div>
+            <div class="content-text">
+                <div class="section-title">ABOUT FOOD SECTOR </div>
+                <p>In the food sector, we bring the finest spices, herbs, and ingredients to homes and industries worldwide. Our portfolio includes vibrant spices such as turmeric, cumin, coriander, and chili, alongside a rich selection of aromatic herbs like basil, thyme, rosemary, and oregano. These are sourced directly from smallholder farmers, ensuring ethical practices, fair trade, and complete traceability from farm to table.</p>
+                <br>
+                <p>Sourcing the finest spices and food products to enhance culinary experiences worldwide. Our offerings are ethically sourced and of unmatched quality.</p>
+                <div class="column">
+                    <h3 class="mt-4">Our USP:</h3>
+                    <ul>
+                        <li>Custom Spice Blends & Herbal Mixtures</li>
+                        <li>Ethical Sourcing & Fair Trade</li>
+                        <li>Quality Assurance & Certifications</li>
+                        <li>Sustainable & Environmentally Friendly Practices</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="columns">
+            <div class="column">
+                <div class="content-image">
+                   <!-- <img src="images/Pharmaceutical-Industry.png" alt="Image">-->
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+
+    <!--Footer Starts Here-->
+<footer class="footer">
+    <p>
+        Copyright © 2024 CCI. All Rights Reserved. 
+        <span class="designer"><a href="http://www.linkedin.com/in/devanshu-jadav-900b61238">Developed by: Devanshu Jadav</a></span>
+    </p>
+</footer>
+<!--Footer Ends Here-->
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const button = document.getElementById('navbar-toggle');
+        const menu = document.getElementById('navbar-sticky');
+
+        button.addEventListener('click', function () {
+            menu.classList.toggle('hidden');
+        });
+    });
+</script>
+
+
+</body>
+</html>
